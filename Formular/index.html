@@ -17,7 +17,54 @@
 	-->
 
 	<form method="post" action="http://formular.itgirls.cz/">
-		<label for="adresa">Jmeno:</label> <input type="text" name="Adresa" id="adresa" value="Opletalova 333, 000 00 brno" placeholder="+420 xxx xxx xxx" >
+
+	<fieldset>
+		<legend> Základní údaje </legend>
+		<label for="jmeno">Adresa:</label> <input type="text" name="Adresa" id="adresa" value="Velká hradební 14/56, 400 01 Ústí nad Labem">
+
+		<label for="vek"> Věk:</label>
+		<input type="number" min="18" step="1" id="vek" name="vek">
+
+		<label for="email"> E-mail:</label>
+		<input type="email" name="email">
+
+		<label for="telefon"> Mobil:</label> 
+		<input type="tel" name="mobil">
+
+		<label for="datum"> Datum:</label>
+		<input type="date" name="datum">
+
+	</fieldset>
+
+		<label for="pass">Heslo:</label>
+		<input type="password" name="pass" >
+
+		<label for="pass">Široká odpověď:</label>
+		<textarea> </textarea>
+
+		<input type="hidden" name="ID" value="XYZ 123456">
+
+		<label >Místo:</label>
+		<select>
+			<option selected> </option>
+			<option name="praha"> Praha </option>
+			<option name="brno"> Brno</option>
+			<option name="ostrava"> Ostrava </option>
+		</select>
+
+		<label >Vyber:</label>
+		<input type="radio" name="volba" id="volba1" value="1"> Volba 1
+            <input type="radio" name="volba" id="volba2" value="2"> Volba 2
+            <input type="radio" name="volba" id="volba3" value="3"> Volba 3
+
+		<label></label>
+		<input type="checkbox" value="souhlas" name="Souhlas se zpracováním"> Souhlasím se zpracováním osobních údajů.
+
+		<br>
+		<br>
+
+		<input type="submit" value="Odeslat formulář">
+
 	</form>
 </body>
 </html>

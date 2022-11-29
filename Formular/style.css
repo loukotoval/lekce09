@@ -9,4 +9,28 @@ body {
 }
 
 /* -------------------------------------------- */
+label {
+	display: block;
+	color: blue;
+}
+
+[type="text"],
+[type="number"] {
+	background-color: lightblue;
+	padding: 15px;
+	border: 1px solid red;
+	border-radius: 10px;
+}
+
+[type="submit"] {
+	padding: 15px;
+	background-color: red;
+	color: white;
+	border-radius: 15px;
+}
+
+[type="submit"]:hover {
+	background-color: white;
+	color: red;
+}
 
